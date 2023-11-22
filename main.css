@@ -1,0 +1,198 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.container .todo-options-form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #212024;
+  padding: 0.5rem;
+}
+
+.container .todo-options-form input,
+.container .todo-options-form button,
+.container .todo-search-filter-form input,
+.container .todo-search-filter-form button {
+  outline: none;
+  border: none;
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.15rem;
+}
+
+.container .todo-options-form input,
+.container .todo-search-filter-form input {
+  width: 100%;
+}
+
+.container .todo-options-form button,
+.container .todo-search-filter-form button {
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+
+.container .todo-options-form button:active,
+.container .todo-search-filter-form button:active {
+  transform: scale(0.9);
+}
+
+.container .todo-tasks-filter-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  background-color: #212024;
+  padding: 0.5rem;
+}
+
+.container .todo-tasks-filter-header.hide {
+  display: none;
+}
+
+.container .todo-tasks-filter-header .tasks-filter-btn {
+  position: relative;
+  font-size: 0.75rem;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.15rem;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+
+.container .todo-tasks-filter-header .tasks-filter-btn.active {
+  background-color: #8e8ffa;
+  color: #fff;
+}
+
+.container .todo-search-filter-form {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  background-color: #212024;
+  padding: 0.5rem;
+}
+
+.container .todo-search-filter-form.hide {
+  display: none;
+}
+
+.container .todo-tasks-header {
+  margin-top: 0.5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5rem;
+  background-color: #212024;
+  padding: 0.5rem;
+}
+
+.container .todo-tasks-header.hide {
+  display: none;
+}
+
+.container .todo-tasks-header .task-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 0.5rem;
+  border-radius: 0.15rem;
+}
+
+.container .todo-tasks-header .task-section .task-content {
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: #000;
+}
+
+.container .todo-tasks-header .task-section .task-content.completed {
+  text-decoration: line-through;
+  color: #777;
+}
+
+.container .todo-tasks-header .task-section .task-actions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.container .todo-tasks-header .task-section .task-actions button {
+  font-size: 0.75rem;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.15rem;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+
+.container .todo-tasks-header .task-section .task-actions button.hide {
+  display: none;
+}
+
+.container .todo-tasks-header .task-section .task-actions button:active {
+  transform: scale(0.9);
+}
+
+.container .todo-tasks-header .task-section .task-actions .task-complete-btn {
+  background-color: #9be8d8;
+  color: #fff;
+}
+
+.container .todo-tasks-header .task-section .task-actions .task-reload-btn {
+  background-color: #87c4ff;
+  color: #fff;
+}
+
+.container .todo-tasks-header .task-section .task-actions .task-delete-btn {
+  background-color: #ff8080;
+  color: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .container {
+    width: 600px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .container {
+    width: 992px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}

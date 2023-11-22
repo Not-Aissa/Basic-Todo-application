@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Todo Application</title>
+  </head>
+  <body>
+    <main class="container">
+      <form id="todo_options_form" class="todo-options-form">
+        <input id="task_input" type="text" placeholder="Enter a task" />
+
+        <button id="task_create_btn">Create</button>
+      </form>
+
+      <header class="todo-tasks-filter-header hide">
+        <button class="tasks-filter-btn active" data-filter="all">All</button>
+
+        <button class="tasks-filter-btn" data-filter="completed">Completed</button>
+
+        <button class="tasks-filter-btn" data-filter="not-completed">Not completed</button>
+        
+        <button class="tasks-filter-btn" data-filter="search">Search</button>
+      </header>
+      
+      <form class="todo-search-filter-form hide">
+        <input id="search_filter_input" type="text" placeholder="Search..." />
+
+        <button id="search_filter_btn">Search</button>
+      </form>
+
+      <header class="todo-tasks-header hide"></header>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>
